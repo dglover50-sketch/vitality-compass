@@ -1,0 +1,128 @@
+/* ============================================
+   Vitality Compass — Brand Theme
+   ============================================ */
+
+/* Google Fonts: Plus Jakarta Sans (headings) + Inter (body) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+/* ── Brand design tokens ── */
+@theme inline {
+  /* Primary palette */
+  --color-teal-600: #0D8A85;
+  --color-teal-700: #0A6E6A;
+  --color-teal-800: #07524F;
+
+  /* Forest greens */
+  --color-forest-500: #3D8B6A;
+  --color-forest-600: #2D6A4F;
+  --color-forest-700: #1B4332;
+
+  /* Warm accent */
+  --color-amber-400: #F0BC5A;
+  --color-amber-500: #E8A838;
+  --color-coral-400: #E8916E;
+
+  /* Warm neutrals */
+  --color-warm-50:  #FAFAF8;
+  --color-warm-100: #F0EFED;
+  --color-warm-200: #E2E1DD;
+  --color-warm-500: #8C8A85;
+  --color-warm-700: #4A4845;
+  --color-warm-900: #1A1A18;
+
+  /* Semantic */
+  --color-success: #2D6A4F;
+  --color-warning: #E8A838;
+  --color-error:   #C73A3A;
+
+  /* Font families */
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body:    "Inter", system-ui, sans-serif;
+}
+
+/* ── Base layer ── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-warm-50 text-warm-900 font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* ── Component utilities ── */
+@layer utilities {
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, #0A6E6A 0%, #07524F 50%, #1B4332 100%);
+  }
+
+  .bg-warm-gradient {
+    background: linear-gradient(180deg, #FAFAF8 0%, #F0EFED 100%);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* ── Hero animated background ── */
+  .bg-hero-animated {
+    background: linear-gradient(
+      135deg,
+      #0A6E6A 0%,
+      #2D6A4F 15%,
+      #1B4332 30%,
+      #0A6E6A 45%,
+      #07524F 55%,
+      #2D6A4F 70%,
+      #0A6E6A 85%,
+      #1B4332 100%
+    );
+    background-size: 400% 400%;
+    animation: heroGradient 20s ease infinite;
+  }
+
+  @keyframes heroGradient {
+    0%   { background-position: 0% 50%; }
+    25%  { background-position: 50% 0%; }
+    50%  { background-position: 100% 50%; }
+    75%  { background-position: 50% 100%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Subtle amber overlay on the animated gradient */
+  .bg-hero-amber-overlay {
+    background: radial-gradient(
+      ellipse at 50% 50%,
+      rgba(232, 168, 56, 0.08) 0%,
+      transparent 60%
+    );
+  }
+
+  /* Root glow particle animations */
+  .root-particle {
+    animation: particleFloat 8s ease-in-out infinite;
+  }
+
+  @keyframes particleFloat {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.3; }
+    50%      { transform: translateY(-20px) scale(1.2); opacity: 0.6; }
+  }
+
+  /* ── Floating quotes animation ── */
+  @keyframes quoteFloat {
+    0%   { transform: translateY(0) rotate(-1deg); opacity: 0; }
+    5%   { opacity: 0.45; }
+    15%  { opacity: 0.50; }
+    30%  { opacity: 0.45; }
+    60%  { transform: translateY(-120vh) rotate(1deg); opacity: 0.30; }
+    75%  { opacity: 0.12; }
+    100% { transform: translateY(-120vh) rotate(1deg); opacity: 0; }
+  }
+}

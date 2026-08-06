@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" fill="none">
+  <!-- Subtle background with warm tone -->
+  <rect width="1440" height="800" fill="#FAFAF8"/>
+  
+  <!-- Large compass circle rings -->
+  <g opacity="0.04">
+    <circle cx="720" cy="400" r="600" stroke="#0A6E6A" stroke-width="1"/>
+    <circle cx="720" cy="400" r="480" stroke="#0A6E6A" stroke-width="0.5"/>
+    <circle cx="720" cy="400" r="360" stroke="#0A6E6A" stroke-width="0.5"/>
+    <circle cx="720" cy="400" r="240" stroke="#0A6E6A" stroke-width="0.5"/>
+    <circle cx="720" cy="400" r="120" stroke="#0A6E6A" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Compass cross coordinates (subtle) -->
+  <g opacity="0.04" stroke="#0A6E6A" stroke-width="1">
+    <!-- N-S line -->
+    <line x1="720" y1="50" x2="720" y2="750"/>
+    <!-- E-W line -->
+    <line x1="220" y1="400" x2="1220" y2="400"/>
+    <!-- NE-SW line -->
+    <line x1="376" y1="144" x2="1064" y2="656"/>
+    <!-- NW-SE line -->
+    <line x1="1064" y1="144" x2="376" y2="656"/>
+  </g>
+  
+  <!-- Decorative leaf shapes (organic) -->
+  <g opacity="0.03" fill="#2D6A4F">
+    <path d="M200 150 Q260 100 320 150 Q260 200 200 150Z" transform="rotate(15 260 150)"/>
+    <path d="M1120 250 Q1180 200 1240 250 Q1180 300 1120 250Z" transform="rotate(-10 1180 250)"/>
+    <path d="M300 600 Q360 550 420 600 Q360 650 300 600Z" transform="rotate(20 360 600)"/>
+    <path d="M1100 580 Q1160 530 1220 580 Q1160 630 1100 580Z" transform="rotate(-25 1160 580)"/>
+  </g>
+  
+  <!-- Small dot pattern grid -->
+  <g opacity="0.03">
+    <pattern id="dots" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="2" fill="#0A6E6A"/>
+    </pattern>
+    <rect width="1440" height="800" fill="url(#dots)"/>
+  </g>
+  
+  <!-- Amber accent blobs -->
+  <g opacity="0.02" fill="#E8A838">
+    <ellipse cx="200" cy="350" rx="80" ry="60" transform="rotate(-30 200 350)"/>
+    <ellipse cx="1240" cy="450" rx="100" ry="50" transform="rotate(25 1240 450)"/>
+  </g>
+</svg>

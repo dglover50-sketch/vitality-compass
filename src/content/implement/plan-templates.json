@@ -1,0 +1,651 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "description": "Vitality Compass plan template configurations. Each template has 3 category variations (Beginner, Maintainer, Optimizer) with 4-week phased structures.",
+    "lastUpdated": "2026-07-08"
+  },
+  "templates": [
+    {
+      "id": "better-sleep",
+      "title": "Better Sleep",
+      "description": "Build a sleep routine that helps you fall asleep faster, stay asleep longer, and wake up feeling rested.",
+      "icon": "moon",
+      "primaryPillar": "sleep",
+      "secondaryPillars": ["mindset", "nutrition"],
+      "estimatedMinutesPerDay": {
+        "Beginner": 7,
+        "Maintainer": 12,
+        "Optimizer": 18
+      },
+      "variations": [
+        {
+          "category": "Beginner",
+          "description": "Foundation — build the minimum viable sleep routine.",
+          "timeCommitment": "5–10 min/day",
+          "weeklyCheckIn": "How many nights this week did you hit your bedtime within 30 minutes?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Set a bedtime",
+              "actionItems": [
+                "Pick a target bedtime and set a phone alarm for it.",
+                "Aim for 7 hours in bed minimum.",
+                "No other changes — just get into bed at the same time."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            },
+            {
+              "week": 2,
+              "focus": "Wind-down ritual",
+              "actionItems": [
+                "Add a 5-minute pre-bed wind-down routine.",
+                "Dim the lights, put your phone away, and do something calm (deep breathing, reading a physical book).",
+                "Keep it simple — the goal is consistency, not perfection."
+              ],
+              "dailyTimeEstimateMinutes": 7
+            },
+            {
+              "week": 3,
+              "focus": "Morning light exposure",
+              "actionItems": [
+                "Within 30 minutes of waking, get 5 minutes of natural light.",
+                "Open the curtains, step outside, or stand near a window.",
+                "Morning light signals your brain to set its internal clock for the day."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            },
+            {
+              "week": 4,
+              "focus": "Caffeine cutoff",
+              "actionItems": [
+                "No caffeine after 2 PM.",
+                "Replace afternoon coffee/tea with herbal tea or water.",
+                "Notice how your sleep quality changes this week."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            }
+          ]
+        },
+        {
+          "category": "Maintainer",
+          "description": "Consistency + quality upgrades — take your sleep from okay to great.",
+          "timeCommitment": "10–15 min/day",
+          "weeklyCheckIn": "Rate your sleep quality this week (1–10) and note one thing that helped or hurt.",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Consistent schedule",
+              "actionItems": [
+                "Same bedtime and wake time every day (within 30 min), including weekends.",
+                "Your circadian rhythm relies on consistency — weekends included.",
+                "Set an alarm for both waking up AND going to bed."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            },
+            {
+              "week": 2,
+              "focus": "Screen sunset",
+              "actionItems": [
+                "No screens (phone, TV, laptop) for 30 minutes before bed.",
+                "Replace screen time with a book, journaling, or a podcast.",
+                "Use blue-light blocking mode if you absolutely must use a device."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            },
+            {
+              "week": 3,
+              "focus": "Cooler room",
+              "actionItems": [
+                "Drop bedroom temperature to 65–68°F (18–20°C).",
+                "Add a fan, open a window, or switch to lighter bedding.",
+                "A cooler room signals your body it's time to sleep."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            },
+            {
+              "week": 4,
+              "focus": "Movement timing",
+              "actionItems": [
+                "Move evening exercise to morning or early afternoon.",
+                "No vigorous activity within 2 hours of bedtime.",
+                "Gentle stretching or yoga in the evening is fine and may help."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            }
+          ]
+        },
+        {
+          "category": "Optimizer",
+          "description": "Bio-individual fine-tuning — optimize every variable for elite sleep.",
+          "timeCommitment": "15–20 min/day",
+          "weeklyCheckIn": "What's one adjustment you tried this week that improved your sleep? What didn't work?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Sleep tracking audit",
+              "actionItems": [
+                "Use a sleep tracker or journal to log: bedtime, wake time, night wakings, and morning energy.",
+                "Identify patterns — what correlates with good vs bad sleep?",
+                "Focus on trends, not single-night data."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 2,
+              "focus": "Light management",
+              "actionItems": [
+                "Wear blue-light blocking glasses 2 hours before bed.",
+                "Install blackout curtains or use a sleep mask.",
+                "Cover or remove all LED lights in the bedroom."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 3,
+              "focus": "Eating timing",
+              "actionItems": [
+                "Last meal at least 3 hours before bedtime.",
+                "No large meals or alcohol within 2 hours of sleep.",
+                "If hungry before bed, have a small snack (e.g., banana, warm milk)."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 4,
+              "focus": "Extended wind-down",
+              "actionItems": [
+                "Create a full 30-minute wind-down routine.",
+                "Light stretching, gratitude journaling, progressive muscle relaxation.",
+                "Experiment to find the combination that works best for you."
+              ],
+              "dailyTimeEstimateMinutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "more-energy",
+      "title": "More Energy",
+      "description": "Boost your daily energy through nutrition, movement, and strategic habits — no caffeine crashes, no extreme diets.",
+      "icon": "zap",
+      "primaryPillar": "nutrition",
+      "secondaryPillars": ["movement", "sleep"],
+      "estimatedMinutesPerDay": {
+        "Beginner": 7,
+        "Maintainer": 13,
+        "Optimizer": 18
+      },
+      "variations": [
+        {
+          "category": "Beginner",
+          "description": "Foundations — energy through nutrition and hydration basics.",
+          "timeCommitment": "5–10 min/day",
+          "weeklyCheckIn": "On a scale of 1–10, how was your energy this week? What one change helped most?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Hydration baseline",
+              "actionItems": [
+                "Drink 6 glasses of water per day.",
+                "Use a marked water bottle or set phone reminders.",
+                "Start each morning with a full glass of water."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            },
+            {
+              "week": 2,
+              "focus": "Breakfast upgrade",
+              "actionItems": [
+                "Add protein to breakfast (egg, yogurt, nuts, protein shake).",
+                "Aim for at least 15–20g of protein at your first meal.",
+                "Protein stabilizes blood sugar and prevents mid-morning crashes."
+              ],
+              "dailyTimeEstimateMinutes": 7
+            },
+            {
+              "week": 3,
+              "focus": "The 3 PM reset",
+              "actionItems": [
+                "Instead of reaching for caffeine/sugar at 3 PM, drink a glass of water.",
+                "Take a 5-minute walk or stretch break.",
+                "Notice if your energy naturally rebounds within 15 minutes."
+              ],
+              "dailyTimeEstimateMinutes": 7
+            },
+            {
+              "week": 4,
+              "focus": "Green with every meal",
+              "actionItems": [
+                "Add one serving of vegetables or fruit to each meal.",
+                "Doesn't matter which kind — just add produce.",
+                "Frozen, fresh, or canned — they all count."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            }
+          ]
+        },
+        {
+          "category": "Maintainer",
+          "description": "Sustained energy through meal structure and movement snacks.",
+          "timeCommitment": "10–15 min/day",
+          "weeklyCheckIn": "Rate your energy dips throughout the day — when are they worst? Did this week's focus help?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Eat every 3–4 hours",
+              "actionItems": [
+                "Structure eating into 3 meals + 1 snack.",
+                "No skipping meals — consistent fuel prevents energy crashes.",
+                "Set a loose schedule (e.g., 8 AM, 12 PM, 3 PM snack, 7 PM dinner)."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            },
+            {
+              "week": 2,
+              "focus": "Protein at every meal",
+              "actionItems": [
+                "Aim for 20–30g protein at each meal.",
+                "Include at least one palm-sized portion per main meal.",
+                "Good sources: chicken, fish, tofu, eggs, Greek yogurt, beans."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            },
+            {
+              "week": 3,
+              "focus": "Midday walk",
+              "actionItems": [
+                "Take a 10-minute walk after lunch.",
+                "Post-meal movement blunts blood sugar spikes and prevents the afternoon slump.",
+                "Even a slow walk counts."
+              ],
+              "dailyTimeEstimateMinutes": 12
+            },
+            {
+              "week": 4,
+              "focus": "Cut the sugar crash",
+              "actionItems": [
+                "Identify one source of added sugar you consume daily.",
+                "Swap it for a lower-sugar alternative (e.g., soda → sparkling water).",
+                "Notice how your afternoon energy changes."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            }
+          ]
+        },
+        {
+          "category": "Optimizer",
+          "description": "Fine-tuning — timing, macros, and recovery for peak energy.",
+          "timeCommitment": "15–20 min/day",
+          "weeklyCheckIn": "What's your energy pattern this week? When do you feel most and least energized — and what's one hypothesis why?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Macro awareness",
+              "actionItems": [
+                "Log one full day of eating (no judgment, just data).",
+                "Note the protein/carb/fat balance at each meal.",
+                "Identify one gap or area for improvement."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 2,
+              "focus": "Strategic carb timing",
+              "actionItems": [
+                "Move most carbs to post-workout or evening meals.",
+                "Limit refined carbs earlier in the day.",
+                "Pair carbs with protein or fat to slow glucose absorption."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 3,
+              "focus": "Sleep-energy link",
+              "actionItems": [
+                "Optimize sleep timing for energy (reference Better Sleep plan).",
+                "Track how sleep quality predicts next-day energy levels.",
+                "Identify your personal \"sleep sweet spot\" (7, 7.5, 8, or 8.5 hours)."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 4,
+              "focus": "Caffeine windowing",
+              "actionItems": [
+                "Limit caffeine to 1–2 cups, only before noon.",
+                "Observe whether afternoon energy improves without a second coffee.",
+                "Switch to herbal tea or decaf for the afternoon ritual."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stress-management",
+      "title": "Stress Management",
+      "description": "Build resilience and calm through science-backed mindset practices — no toxic positivity, just practical tools.",
+      "icon": "heart",
+      "primaryPillar": "mindset",
+      "secondaryPillars": ["sleep", "movement"],
+      "estimatedMinutesPerDay": {
+        "Beginner": 6,
+        "Maintainer": 12,
+        "Optimizer": 18
+      },
+      "variations": [
+        {
+          "category": "Beginner",
+          "description": "The 5-minute reset — micro-habits that shift your nervous system.",
+          "timeCommitment": "5–10 min/day",
+          "weeklyCheckIn": "How many days this week did you do your new habit? What got in the way?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "One deep breath",
+              "actionItems": [
+                "3 times a day, take 1 slow deep breath (4s in, 4s out).",
+                "Attach it to an existing habit (before coffee, after bathroom, before bed).",
+                "That's it — one breath. No more, no pressure."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            },
+            {
+              "week": 2,
+              "focus": "The 5-minute pause",
+              "actionItems": [
+                "Once a day, sit in silence for 5 minutes.",
+                "No phone, no input, no agenda. Just be.",
+                "Set a timer so you don't have to watch the clock."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            },
+            {
+              "week": 3,
+              "focus": "Gratitude one-liner",
+              "actionItems": [
+                "Each night, write down one thing that went well today.",
+                "One sentence minimum — no need to elaborate.",
+                "The gratitude can be tiny (e.g., 'good cup of coffee')."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            },
+            {
+              "week": 4,
+              "focus": "The worry boundary",
+              "actionItems": [
+                "When you catch yourself worrying after 8 PM, say 'I'll deal with this tomorrow.'",
+                "Write it down in a notebook and close it.",
+                "This trains your brain to contain worry to appropriate times."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            }
+          ]
+        },
+        {
+          "category": "Maintainer",
+          "description": "Building a buffer — regular practices that build resilience.",
+          "timeCommitment": "10–15 min/day",
+          "weeklyCheckIn": "What's your stress level been this week (1–10)? Did your daily practice shift it at all?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Morning check-in",
+              "actionItems": [
+                "Before checking your phone in the morning, take 3 deep breaths.",
+                "Ask yourself: 'What do I need today?'",
+                "Notice the answer without judging it."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            },
+            {
+              "week": 2,
+              "focus": "The 10-minute walk",
+              "actionItems": [
+                "One 10-minute walk per day with no phone, no podcasts.",
+                "No purpose other than walking and being present.",
+                "Notice your surroundings — the air, the sounds, the ground beneath you."
+              ],
+              "dailyTimeEstimateMinutes": 12
+            },
+            {
+              "week": 3,
+              "focus": "One-task focus",
+              "actionItems": [
+                "Pick one daily activity and do only that — no multitasking.",
+                "Eat without scrolling. Commute without podcasts. Shower without planning.",
+                "Single-tasking for even 10 minutes gives your brain a recovery window."
+              ],
+              "dailyTimeEstimateMinutes": 10
+            },
+            {
+              "week": 4,
+              "focus": "Evening wind-down",
+              "actionItems": [
+                "10 minutes before bed: journal 3 things you accomplished today.",
+                "Write 1 thing you're releasing for tomorrow.",
+                "Close the notebook and let the day go."
+              ],
+              "dailyTimeEstimateMinutes": 12
+            }
+          ]
+        },
+        {
+          "category": "Optimizer",
+          "description": "Advanced resilience — active recovery and mindset training.",
+          "timeCommitment": "15–20 min/day",
+          "weeklyCheckIn": "What's one stress pattern you noticed this week? Did your practice help you respond differently?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Body scan",
+              "actionItems": [
+                "10-minute body scan meditation before bed (guided or self-led).",
+                "Notice tension in each part of your body without trying to fix it.",
+                "Awareness alone often helps the tension release naturally."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 2,
+              "focus": "Cognitive reframe",
+              "actionItems": [
+                "When you catch negative self-talk, write it down.",
+                "Ask: 'What would I tell a friend who said this to me?'",
+                "Write the kinder, more balanced version."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 3,
+              "focus": "Boundary practice",
+              "actionItems": [
+                "Identify one boundary you need to set (with work, a person, or yourself).",
+                "Practice saying 'no' or 'not right now' once this week.",
+                "Start small — a boundary with low stakes."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 4,
+              "focus": "Recovery audit",
+              "actionItems": [
+                "Review your week: where did you truly recover vs merely distract?",
+                "Truly recover = feel recharged, present, connected.",
+                "Merely distract = zone out, scroll, numbing.",
+                "Adjust one recovery window to be genuinely restorative this week."
+              ],
+              "dailyTimeEstimateMinutes": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "balanced-wellness",
+      "title": "Balanced Wellness",
+      "description": "A gentle, full-body plan that touches all 4 wellness pillars equally. Perfect when you don't have a single priority area.",
+      "icon": "compass",
+      "primaryPillar": null,
+      "secondaryPillars": ["nutrition", "movement", "sleep", "mindset"],
+      "estimatedMinutesPerDay": {
+        "Beginner": 8,
+        "Maintainer": 13,
+        "Optimizer": 18
+      },
+      "variations": [
+        {
+          "category": "Beginner",
+          "description": "Gentle introduction across all pillars.",
+          "timeCommitment": "5–10 min/day",
+          "weeklyCheckIn": "How did this week feel? Which pillar was easiest to work on? Which was hardest?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Hydrate & breathe",
+              "actionItems": [
+                "Drink 6 glasses of water daily.",
+                "Take 3 deep breaths (4s in, 4s out) at 3 points during the day.",
+                "No other changes — build the foundation first."
+              ],
+              "dailyTimeEstimateMinutes": 5
+            },
+            {
+              "week": 2,
+              "focus": "Move & eat green",
+              "actionItems": [
+                "Walk for 5 minutes after lunch.",
+                "Add one serving of vegetables to one meal.",
+                "Small steps that compound."
+              ],
+              "dailyTimeEstimateMinutes": 8
+            },
+            {
+              "week": 3,
+              "focus": "Sleep anchor & gratitude",
+              "actionItems": [
+                "Set a consistent bedtime and wake time.",
+                "Write down one good thing from your day before sleeping.",
+                "Sleep + gratitude = a powerful reset."
+              ],
+              "dailyTimeEstimateMinutes": 8
+            },
+            {
+              "week": 4,
+              "focus": "Bring it together",
+              "actionItems": [
+                "Continue your Week 1–3 habits.",
+                "Pick one area to focus on next month.",
+                "Reflect on what worked and what didn't."
+              ],
+              "dailyTimeEstimateMinutes": 8
+            }
+          ]
+        },
+        {
+          "category": "Maintainer",
+          "description": "Consistent habits across all pillars.",
+          "timeCommitment": "10–15 min/day",
+          "weeklyCheckIn": "Which pillar feels strongest? Which needs more attention next week?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Nutrition week",
+              "actionItems": [
+                "Add protein to breakfast (20g+).",
+                "Eat vegetables with lunch AND dinner.",
+                "Drink water before every meal."
+              ],
+              "dailyTimeEstimateMinutes": 12
+            },
+            {
+              "week": 2,
+              "focus": "Movement week",
+              "actionItems": [
+                "Walk for 10 minutes after lunch daily.",
+                "Do one strength session (bodyweight is fine).",
+                "Stand up and stretch every hour."
+              ],
+              "dailyTimeEstimateMinutes": 12
+            },
+            {
+              "week": 3,
+              "focus": "Sleep & mindset week",
+              "actionItems": [
+                "Stick to a consistent bedtime all 7 days.",
+                "No screens 30 min before bed.",
+                "Morning check-in: 3 breaths before phone."
+              ],
+              "dailyTimeEstimateMinutes": 12
+            },
+            {
+              "week": 4,
+              "focus": "Integration week",
+              "actionItems": [
+                "Continue all pillars from weeks 1–3.",
+                "Identify which habit you want to keep permanently.",
+                "Set a goal for next month."
+              ],
+              "dailyTimeEstimateMinutes": 12
+            }
+          ]
+        },
+        {
+          "category": "Optimizer",
+          "description": "Fine-tune all pillars simultaneously.",
+          "timeCommitment": "15–20 min/day",
+          "weeklyCheckIn": "What's your overall wellness score this week (1–10)? Which adjustment moved the needle most?",
+          "weeks": [
+            {
+              "week": 1,
+              "focus": "Nutrition deep dive",
+              "actionItems": [
+                "Log one day of eating — identify one macro gap.",
+                "Eat your largest meal earlier in the day.",
+                "Finish eating 3 hours before bed."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 2,
+              "focus": "Movement variety",
+              "actionItems": [
+                "Do 3 different types of movement this week.",
+                "One easy cardio, one strength, one mobility/flexibility.",
+                "Morning light + movement within 30 min of waking."
+              ],
+              "dailyTimeEstimateMinutes": 18
+            },
+            {
+              "week": 3,
+              "focus": "Sleep optimization",
+              "actionItems": [
+                "Sleep tracking audit — identify patterns.",
+                "Blue-blocking glasses 2h before bed.",
+                "Bedroom temperature at 65–68°F."
+              ],
+              "dailyTimeEstimateMinutes": 15
+            },
+            {
+              "week": 4,
+              "focus": "Mindset & integration",
+              "actionItems": [
+                "Daily structured journaling (3 gratitudes + 1 accomplishment + 1 intention).",
+                "Body scan meditation before bed.",
+                "Review the month — what habits will you keep?"
+              ],
+              "dailyTimeEstimateMinutes": 18
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "categoryDescriptions": {
+    "Beginner": "New to wellness habits or has let them slide. Needs foundational, low-barrier steps. High support, low overwhelm.",
+    "Maintainer": "Has basic routines but inconsistent or stuck. Needs accountability, variety, and small upgrades to existing habits.",
+    "Optimizer": "Strong habits, good consistency. Needs advanced strategies, bio-individual tuning, and fresh challenges."
+  }
+}

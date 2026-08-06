@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npx vite build",
+  "outputDirectory": "dist/client",
+  "installCommand": "npm install",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/((?!assets/|favicon\\.svg|manifest\\.json|sw\\.js|robots\\.txt|sitemap\\.xml|pwa-icon).*)",
+      "destination": "/api/index"
+    }
+  ]
+}

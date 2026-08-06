@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" fill="none">
+  <defs>
+    <!-- Glow filter for veins -->
+    <filter id="veinGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Stronger glow for organs -->
+    <filter id="organGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Root glow -->
+    <filter id="rootGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Gradient for pulse animation -->
+    <linearGradient id="heartGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8A838"/>
+      <stop offset="100%" stop-color="#F0BC5A"/>
+    </linearGradient>
+    <linearGradient id="veinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8A838" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#E8A838" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="rootGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A6E6A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2D6A4F" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Human silhouette outline -->
+  <g opacity="0.08">
+    <!-- Head -->
+    <ellipse cx="720" cy="120" rx="30" ry="38" stroke="#0A6E6A" stroke-width="2" fill="none"/>
+    <!-- Neck -->
+    <path d="M710 158 L710 185 L730 185 L730 158" stroke="#0A6E6A" stroke-width="1.5" fill="none"/>
+    <!-- Torso -->
+    <path d="M690 185 Q670 280 660 380 L660 520 Q660 550 680 560 L720 570 L760 560 Q780 550 780 520 L780 380 Q770 280 750 185" stroke="#0A6E6A" stroke-width="2" fill="none"/>
+    <!-- Left arm -->
+    <path d="M690 220 Q650 260 620 320 Q600 360 610 390" stroke="#0A6E6A" stroke-width="1.5" fill="none"/>
+    <!-- Right arm -->
+    <path d="M750 220 Q790 260 820 320 Q840 360 830 390" stroke="#0A6E6A" stroke-width="1.5" fill="none"/>
+    <!-- Left leg -->
+    <path d="M690 560 Q670 620 660 700 Q655 750 650 800" stroke="#0A6E6A" stroke-width="2" fill="none"/>
+    <!-- Right leg -->
+    <path d="M750 560 Q770 620 780 700 Q785 750 790 800" stroke="#0A6E6A" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Glowing veins (warm amber) with pulse animation -->
+  <g filter="url(#veinGlow)">
+    <!-- Central vein - heart to head -->
+    <path d="M720 300 L720 180" stroke="#E8A838" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <!-- Heart to arms -->
+    <path d="M720 340 L650 300 L620 340" stroke="#E8A838" stroke-width="1" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M720 340 L790 300 L820 340" stroke="#E8A838" stroke-width="1" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Heart to legs -->
+    <path d="M720 420 L700 500 L690 560" stroke="#E8A838" stroke-width="1" opacity="0.4">
+      <animate attributeName="opacity" values="0.15;0.5;0.15" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M720 420 L740 500 L750 560" stroke="#E8A838" stroke-width="1" opacity="0.4">
+      <animate attributeName="opacity" values="0.15;0.5;0.15" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Branching veins - torso -->
+    <path d="M700 260 L680 280 L670 310" stroke="#E8A838" stroke-width="0.8" opacity="0.35">
+      <animate attributeName="opacity" values="0.15;0.4;0.15" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M740 260 L760 280 L770 310" stroke="#E8A838" stroke-width="0.8" opacity="0.35">
+      <animate attributeName="opacity" values="0.15;0.4;0.15" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Head veins -->
+    <path d="M715 160 L708 130" stroke="#E8A838" stroke-width="0.7" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.35;0.1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M725 160 L732 130" stroke="#E8A838" stroke-width="0.7" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.35;0.1" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Organs -->
+  <g filter="url(#organGlow)">
+    <!-- Heart (center chest) - pulsing amber -->
+    <path d="M712 310 Q720 300 728 310 Q728 325 720 335 Q712 325 712 310Z" fill="#E8A838" opacity="0.4">
+      <animate attributeName="opacity" values="0.25;0.55;0.25" dur="1.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="scale" values="1;1.03;1" dur="1.2s" repeatCount="indefinite" additive="sum"/>
+    </path>
+    <!-- Brain (head) - subtle amber -->
+    <ellipse cx="720" cy="115" rx="18" ry="22" fill="#E8A838" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Lungs (left) -->
+    <ellipse cx="698" cy="290" rx="15" ry="20" fill="#F0BC5A" opacity="0.12">
+      <animate attributeName="opacity" values="0.08;0.18;0.08" dur="3.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Lungs (right) -->
+    <ellipse cx="742" cy="290" rx="15" ry="20" fill="#F0BC5A" opacity="0.12">
+      <animate attributeName="opacity" values="0.08;0.18;0.08" dur="3.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <!-- Stomach -->
+    <ellipse cx="720" cy="400" rx="20" ry="15" fill="#E8A838" opacity="0.1">
+      <animate attributeName="opacity" values="0.06;0.14;0.06" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Root connections - teal/forest green spreading into ground -->
+  <g filter="url(#rootGlow)">
+    <!-- Left foot roots -->
+    <path d="M690 560 Q660 630 640 700 Q620 780 590 850" stroke="#0A6E6A" stroke-width="1.5" opacity="0.4">
+      <animate attributeName="opacity" values="0.15;0.5;0.15" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M690 560 Q650 640 620 720 Q600 780 550 840" stroke="#0A6E6A" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M690 560 Q630 650 580 730 Q550 790 480 860" stroke="#2D6A4F" stroke-width="0.8" opacity="0.25">
+      <animate attributeName="opacity" values="0.08;0.35;0.08" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M690 560 Q670 650 650 750 Q640 800 620 870" stroke="#0A6E6A" stroke-width="0.7" opacity="0.2">
+      <animate attributeName="opacity" values="0.08;0.3;0.08" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Right foot roots -->
+    <path d="M750 560 Q780 630 800 700 Q820 780 850 850" stroke="#0A6E6A" stroke-width="1.5" opacity="0.4">
+      <animate attributeName="opacity" values="0.15;0.5;0.15" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M750 560 Q790 640 820 720 Q840 780 890 840" stroke="#0A6E6A" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M750 560 Q810 650 860 730 Q890 790 960 860" stroke="#2D6A4F" stroke-width="0.8" opacity="0.25">
+      <animate attributeName="opacity" values="0.08;0.35;0.08" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M750 560 Q770 650 790 750 Q800 800 820 870" stroke="#0A6E6A" stroke-width="0.7" opacity="0.2">
+      <animate attributeName="opacity" values="0.08;0.3;0.08" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Tree-like connections branching from roots -->
+    <path d="M590 850 Q560 830 530 840 Q510 850 490 830" stroke="#2D6A4F" stroke-width="0.6" opacity="0.2">
+      <animate attributeName="opacity" values="0.08;0.25;0.08" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M850 850 Q880 830 910 840 Q930 850 950 830" stroke="#2D6A4F" stroke-width="0.6" opacity="0.2">
+      <animate attributeName="opacity" values="0.08;0.25;0.08" dur="9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Energy particles floating up from roots -->
+  <g>
+    <circle cx="620" cy="780" r="2" fill="#0A6E6A" opacity="0.5">
+      <animate attributeName="cy" values="780;580;380" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.3;0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="750" r="1.5" fill="#0A6E6A" opacity="0.4">
+      <animate attributeName="cy" values="750;550;350" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.2;0" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="680" cy="800" r="1.5" fill="#E8A838" opacity="0.3">
+      <animate attributeName="cy" values="800;600;400" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.15;0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="770" r="2" fill="#E8A838" opacity="0.4">
+      <animate attributeName="cy" values="770;570;370" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.2;0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
