@@ -27,7 +27,7 @@ jobs:
 
       - run: bun install
       - run: bun run build
-      - run: npx cap copy android
+      - run: npx cap sync android
 
       - run: mkdir -p android/keystore
 
