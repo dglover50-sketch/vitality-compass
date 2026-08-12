@@ -33,7 +33,7 @@ jobs:
 
       - env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-        run: echo "$KEYSTORE_BASE64" | base64 -d > android/keystore/vitality-compass.keystore
+        run: echo "$KEYSTORE_BASE64" | tr -d '\n\r ' | base64 -d > android/keystore/vitality-compass.keystore
 
       - env:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
